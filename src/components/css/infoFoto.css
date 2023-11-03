@@ -1,0 +1,35 @@
+.informacoes {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.like, .totalComentario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.like button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: #ffff;
+}
+
+.like button:hover path {
+    fill: #ef233c;
+}
+
+.like button:hover svg {
+    transform: scale(1.2);
+}
+
+.like p, .totalComentario p {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+}

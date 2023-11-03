@@ -1,0 +1,50 @@
+.comentario {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #D2EAFA;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.headerComentario {
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoAutor, .dataHora {
+    margin: 0;
+}
+
+.infoAutor {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.infoAutor img, .infoAutor p {
+   margin: 0;
+}
+
+.infoAutor img{
+    width: 2.5rem;
+    border: solid 0.2rem #FFFFFF;
+    border-radius: 50%;
+}
+
+.infoAutor p{
+    margin-left: 0.5rem;
+    font-size: 1rem;
+}
+
+.dataHora p {
+    font-size: 0.8rem;
+    color: #426A9D;
+}
+
+.texto {
+    padding: 1rem;
+    margin: 0;
+    word-wrap: break-word;
+    text-align: justify;
+    text-justify: inter-word;
+}
