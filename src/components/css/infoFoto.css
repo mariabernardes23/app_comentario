@@ -21,10 +21,6 @@
     background-color: #ffff;
 }
 
-.like button:hover path {
-    fill: #ef233c;
-}
-
 .like button:hover svg {
     transform: scale(1.2);
 }

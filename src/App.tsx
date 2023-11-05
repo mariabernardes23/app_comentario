@@ -11,7 +11,7 @@ function App() {
 
   function adicionarComentario(comentario: InfoComentario) {
     setListaComentario([...listaComentario, comentario])
-    console.log(listaComentario);
+    
     localStorage.setItem('key_comentarios', JSON.stringify([...listaComentario, comentario]))
   }
 

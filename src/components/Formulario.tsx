@@ -22,30 +22,21 @@ export default function Formulario(props: { adicionarComentario: (comentario: In
         props.adicionarComentario(comentario)
         setInputAutor('')
         setInputTexto('')
-        // setComentario({
-        //     autor: '',
-        //     texto: '',
-        //     dataHora: ''
-        // });
-        // atualizarDataHora();
-        
-        // setComentario({...comentario, autor: ''})
-        // setComentario({...comentario, texto: ''})
     }
 
     useEffect(() => {
-        atualizarDataHora();
+        atualizarDataHora()
+
+        console.log(comentario);
         if (comentario.autor.trim() !== '' && comentario.texto.trim() !== '') {
             adicionarComentario(comentario);
         }else {
             return;
         }
         
-    }, [comentario])
+    }, [ comentario ])
 
-    function  atualizarDataHora() {
-        //const dataAtual = new Date().toLocaleString()
-        //setComentario({...comentario, dataHora: dataAtual});
+    function atualizarDataHora() {
         setInputDataHora(new Date().toLocaleString())
     };
  
@@ -61,29 +52,6 @@ export default function Formulario(props: { adicionarComentario: (comentario: In
         })
         
         console.log(inputAutor, inputTexto, inputDataHora);
-
-        
-        console.log(comentario);
-
-
-
-        // if(comentario.autor.trim() !== '' && comentario.texto.trim() !== '') {
-        //     adicionarComentario(comentario)
-            
-        //     // setComentario({
-        //     //     autor: '',
-        //     //     texto: '',
-        //     //     dataHora: ''
-        //     // })
-        //     // setInputAutor('')
-        //     // setInputTexto('')
-        //     // setComentario({...comentario, autor: ''})
-        //     // setComentario({...comentario, texto: ''})
-        // } else {
-        //     alert('Comentario inválido')
-        //     // setComentario({...comentario, autor: ''})
-        //     // setComentario({...comentario, texto: ''})
-        // }
     }
     
     return (
@@ -94,17 +62,13 @@ export default function Formulario(props: { adicionarComentario: (comentario: In
             >
                 <input 
                     placeholder="Digite seu nome"
-                    //value={ comentario.autor }
                     value={ inputAutor }
-                    //onChange={ e => setComentario({...comentario, autor: e.target.value}) }
                     onChange={ (e) => setInputAutor(e.target.value)}
                 />
 
                 <textarea 
                     placeholder="Digite seu comentario aqui"
-                    //value={ comentario.texto }
                     value={ inputTexto }
-                    //onChange={ e => setComentario({...comentario, texto: e.target.value}) }
                     onChange={e => setInputTexto(e.target.value)}
                 ></textarea>
 
