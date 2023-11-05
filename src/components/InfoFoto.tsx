@@ -3,8 +3,8 @@ import { InfoComentario } from "./Formulario";
 import { useState } from "react";
 
 export default function InfoFoto(props: { listaComentario: InfoComentario[] }) {
-  const [contador, setContador] = useState(0);
-  const [cor, setCor] = useState("black");
+  const [ contador, setContador ] = useState(0);
+  const [ cor, setCor ] = useState("black");
 
   function like() {
     if( contador > 0) {
@@ -12,7 +12,7 @@ export default function InfoFoto(props: { listaComentario: InfoComentario[] }) {
       setCor("black");
     } else {
       setContador((valorAtual) => valorAtual + 1);
-      setCor("#ef233c");
+      setCor("#ef223c");
     }  
   }
 
