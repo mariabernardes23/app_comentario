@@ -31,6 +31,8 @@ export default function Formulario(props: { adicionarComentario: (comentario: In
         if (comentario.autor.trim() !== '' && comentario.texto.trim() !== '') {
             adicionarComentario(comentario);
         }else {
+            setInputAutor('')
+            setInputTexto('')
             return;
         }
         
