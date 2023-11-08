@@ -9,7 +9,7 @@ Projetei uma aplicação web que permite aos usuários publicar comentários em 
 ![TypeScript](https://img.shields.io/badge/TypeScript-000?style=for-the-badge&logo=typescript)
 
 ## 🔗 Link de demonstração
-<a href="https://app-comentario-fsl9z73ui-mariabernardes23s-projects.vercel.app/">App Comentario</a>
+<a href="https://app-comentario.vercel.app">App Comentario</a>
 
 ## 🎨 Documentação de cores
 
