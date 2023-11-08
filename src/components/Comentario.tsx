@@ -10,7 +10,7 @@ export default function Comentario(props: { listaComentario: InfoComentario[] })
                     <div key={index} className='comentario'>
                         <div className="headerComentario">
                             <div className="infoAutor">
-                                <img src="./src/components/img/draw_Nuna.jpg" alt="" />
+                                <img src="./public/img/draw_Nuna.jpg" alt="" />
                                 <p>{item.autor}</p>
                             </div>
                             <div className="dataHora">

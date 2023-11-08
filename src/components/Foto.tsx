@@ -4,7 +4,7 @@ import './css/foto.css'
 export default function Foto() {
   return (
     <div className="conteinerImg">
-      <img src="./src/components/img/foto.jpg" alt="" />
+      <img src="./public/img/foto.jpg" alt="" />
     </div>
   );
 }
